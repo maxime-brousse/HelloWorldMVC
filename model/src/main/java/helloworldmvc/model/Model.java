@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Model implements IModel {
 
@@ -13,10 +12,7 @@ public class Model implements IModel {
         if (in==null)
             return "erreur";
         try (BufferedReader stream=new BufferedReader(new InputStreamReader(in))){
-            ;
-
             return stream.readLine();
-
         }
         catch (IOException e) {
             throw new RuntimeException(e);

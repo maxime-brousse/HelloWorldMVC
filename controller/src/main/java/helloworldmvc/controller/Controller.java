@@ -4,8 +4,8 @@ import helloworldmvc.model.IModel;
 import helloworldmvc.view.IView;
 
 public class Controller {
-    private IModel model;
-    private IView view;
+    private final IModel model;
+    private final IView view;
 
     public Controller(IModel model, IView view) {
         this.model = model;
